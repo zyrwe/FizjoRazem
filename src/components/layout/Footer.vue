@@ -10,8 +10,9 @@
       <!-- Kontakt -->
       <div>
         <h4 class="font-semibold mb-4">Kontakt</h4>
-        <p>+48 123 456 789</p>
-        <p>kontakt@example.com</p>
+        <p>+48 455 505 027</p>
+        <p>+48 455 408 009</p>
+        <p>kontakt@fizjorazem.pl</p>
       </div>
 
       <!-- Dane firmy -->

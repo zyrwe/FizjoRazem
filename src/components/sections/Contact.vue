@@ -5,26 +5,29 @@
         class="text-3xl md:text-4xl font-Poppins py-15 font-bold mb-8 text-[--color-ink]"
       >
         Zadzwoń do nas !
+        <div class="w-24 mt-2 h-1 bg-accent mx-auto rounded-full"></div>
       </h2>
     </div>
 
     <div class="grid grid-cols-1 md:grid-cols-2 gap-16 max-w-6xl mx-auto">
       <!-- Wizytówka 1 -->
       <div class="card-wrapper">
-        <img
-          src="/card/card1.png"
-          alt="Wizytówka 1"
-          class="contact-card contact-card1"
-        />
+        <a href="tel:455505027">
+          <img
+            src="/card/card1.png"
+            alt="Wizytówka 1"
+            class="contact-card contact-card1"
+        /></a>
       </div>
 
       <!-- Wizytówka 2 -->
       <div class="card-wrapper">
-        <img
-          src="/card/card2.png"
-          alt="Wizytówka 2"
-          class="contact-card contact-card2"
-        />
+        <a href="tel:455408009">
+          <img
+            src="/card/card2.png"
+            alt="Wizytówka 2"
+            class="contact-card contact-card2"
+        /></a>
       </div>
     </div>
     <div
@@ -40,7 +43,7 @@
       >
         <a
           href="mailto:kontakt@fizjorazem.pl"
-          class="text-3xl transition-colors duration-300 text-primary font-Nohemi"
+          class="text-3xl transition-colors duration-300 text-primary font-Nohemi font-bold"
         >
           kontakt@fizjorazem.pl
         </a>

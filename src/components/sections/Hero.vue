@@ -13,6 +13,7 @@ defineProps({
   >
     <h1 class="text-5xl md:text-6xl lg:text-7xl font-Nohemi mb-6 leading-tight">
       {{ landingContent.hero.title }}
+      <div class="w-24 mt-2 h-1 bg-accent mx-auto rounded-full"></div>
     </h1>
     <p class="text-lg md:text-xl mb-6">{{ landingContent.hero.subtitle }}</p>
     <a

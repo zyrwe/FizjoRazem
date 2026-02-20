@@ -16,8 +16,13 @@ export const landingContent = {
   },
 
   about: {
-    title: "Kim jesteśmy?",
-    text: "Fizjorazem to miejsce, gdzie łączymy wiedzę, doświadczenie i empatię.",
+    title: "Dlaczego my?",
+    text: [
+      "Traktujemy Cię z <strong>szacunkiem i empatią</strong>.",
+      "Słuchamy uważnie i <strong>dostosowujemy terapię do Twoich potrzeb</strong>.",
+      "Jesteśmy dostępne, gdy <strong>potrzebujesz rady</strong>.",
+      "Wierzymy w Twój potencjał, <strong>nawet gdy Ty stracisz nadzieję</strong>.",
+    ],
   },
 
   services: {

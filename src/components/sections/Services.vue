@@ -4,12 +4,13 @@ import { services } from "@/content/servicesData.js";
 </script>
 
 <template>
-  <section id="services" class="py-35 px-6 relative">
+  <section id="services" class="py-25 px-6 relative">
     <h2 class="text-4xl md:text-5xl font-bold text-center mb-16 text-ink">
       Nasze metody pracy
+      <div class="w-24 mt-2 h-1 bg-accent mx-auto rounded-full"></div>
     </h2>
     <div
-      class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-4 justify-items-center"
+      class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-4 justify-items-center max-w-[1200px] mx-auto"
     >
       <ServiceCard
         v-for="(service, index) in services"

@@ -29,6 +29,16 @@ const scrollToTop = () => {
   if (el) el.scrollIntoView({ behavior: "smooth" });
 };
 
+const isOpen = ref(false);
+
+const toggleMenu = () => {
+  isOpen.value = !isOpen.value;
+};
+
+const closeMenu = () => {
+  isOpen.value = false;
+};
+
 onMounted(() => {
   window.addEventListener("scroll", handleScroll);
   handleScroll();
@@ -42,15 +52,15 @@ onUnmounted(() => {
 <template>
   <nav class="sticky top-0 z-50 transition-all duration-300">
     <div
-      class="max-w-7xl mx-auto flex items-center bg-primary justify-between px-6 py-2 border-2 border-secondary rounded-2xl backdrop-blur-md"
+      class="max-w-7xl mx-auto flex items-center bg-primary justify-between px-6 py-3 border-2 border-secondary rounded-2xl backdrop-blur-md"
     >
-      <!-- LOGO po lewej -->
+      <!-- LOGO -->
       <span class="cursor-pointer" @click="scrollToTop">
-        <img src="/logo/x-w.png" alt="Fizjorazem" class="h-16 w-auto" />
+        <img src="/logo/x-w.png" alt="Fizjorazem" class="h-14 w-auto" />
       </span>
 
-      <!-- MENU ŚRODEK -->
-      <ul class="flex gap-8 font-Nohemi text-2xl">
+      <!-- DESKTOP MENU -->
+      <ul class="hidden md:flex gap-8 font-Nohemi text-xl">
         <li
           v-for="(link, index) in landingContent.nav.links"
           :key="link.label"
@@ -58,46 +68,97 @@ onUnmounted(() => {
         >
           <a
             :href="link.href"
-            class="relative px-3 py-2 text-white font-medium transition-all duration-300 ease-out hover:text-accent hover:scale-110 hover:-translate-y-1"
+            @click="closeMenu"
+            class="relative px-3 py-2 text-white font-medium transition-all duration-300 hover:text-accent hover:scale-110 hover:-translate-y-1"
             :class="activeIndex === index ? 'text-accent scale-110' : ''"
           >
             {{ link.label }}
 
             <span
               class="absolute left-0 -bottom-1 h-[2px] w-0 bg-accent transition-all duration-300"
-              :class="activeIndex === index ? 'w-full' : 'group-hover:w-full'"
+              :class="activeIndex === index ? 'w-full' : ''"
             ></span>
           </a>
         </li>
       </ul>
 
-      <!-- RIGHT SIDE PLACEHOLDER / CTA -->
-      <div class="flex gap-4 items-center">
+      <!-- SOCIAL (desktop only) -->
+      <div class="hidden md:flex gap-4 items-center">
         <a
           href="https://facebook.com"
           target="_blank"
-          class="text-secondary hover:text-accent hover:scale-125 transition-all duration-300"
-          ><img
-            src="/external/Facebook.png"
-            alt="Facebook"
-            class="h-8 w-auto"
-          />
-          <i class="fa-brands fa-facebook text-2xl"></i>
+          class="hover:scale-125 transition-all duration-300"
+        >
+          <img src="/external/Facebook.png" alt="Facebook" class="h-6" />
         </a>
 
         <a
           href="https://instagram.com"
           target="_blank"
-          class="text-secondary hover:text-accent hover:scale-125 transition-all duration-300"
+          class="hover:scale-125 transition-all duration-300"
         >
-          <img
-            src="/external/Instagram.png"
-            alt="Instagram"
-            class="h-8 w-auto"
-          />
-          <i class="fa-brands fa-instagram text-2xl"></i>
+          <img src="/external/Instagram.png" alt="Instagram" class="h-6" />
         </a>
       </div>
+
+      <!-- HAMBURGER BUTTON -->
+      <button
+        @click="toggleMenu"
+        class="md:hidden flex flex-col gap-1 w-8 h-8 justify-center items-center"
+      >
+        <span
+          class="h-0.5 w-6 bg-white transition-all duration-300"
+          :class="isOpen ? 'rotate-45 translate-y-2' : ''"
+        ></span>
+        <span
+          class="h-0.5 w-6 bg-white transition-all duration-300"
+          :class="isOpen ? 'opacity-0' : ''"
+        ></span>
+        <span
+          class="h-0.5 w-6 bg-white transition-all duration-300"
+          :class="isOpen ? '-rotate-45 -translate-y-2' : ''"
+        ></span>
+      </button>
     </div>
+
+    <!-- MOBILE MENU -->
+    <transition name="fade">
+      <div
+        v-if="isOpen"
+        class="md:hidden bg-primary mt-2 mx-4 rounded-xl border border-secondary p-6 flex flex-col gap-6 text-center text-white font-Nohemi text-xl"
+      >
+        <a
+          v-for="(link, index) in landingContent.nav.links"
+          :key="link.label"
+          :href="link.href"
+          @click="closeMenu"
+          class="transition-all duration-300 hover:text-accent"
+          :class="activeIndex === index ? 'text-accent' : ''"
+        >
+          {{ link.label }}
+        </a>
+
+        <div class="flex justify-center gap-6 pt-4">
+          <a href="https://facebook.com" target="_blank">
+            <img src="/external/Facebook.png" class="h-6" />
+          </a>
+          <a href="https://instagram.com" target="_blank">
+            <img src="/external/Instagram.png" class="h-6" />
+          </a>
+        </div>
+      </div>
+    </transition>
   </nav>
 </template>
+
+<style scoped>
+.fade-enter-active,
+.fade-leave-active {
+  transition: all 0.3s ease;
+}
+.fade-enter-from,
+.fade-leave-to {
+  opacity: 0;
+  transform: translateY(-10px);
+}
+</style>
