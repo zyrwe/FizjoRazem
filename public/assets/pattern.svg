@@ -1,0 +1,22 @@
+<svg viewBox="0 0 1440 600" xmlns="http://www.w3.org/2000/svg">
+  <!-- Gradient dla fal -->
+  <defs>
+    <linearGradient id="waveGradient1" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#a2b391" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#f1f7e7" stop-opacity="0.8"/>
+    </linearGradient>
+    <linearGradient id="waveGradient2" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#ca9ca9" stop-opacity="0.6"/>
+      <stop offset="100%" stop-color="#eff5e5" stop-opacity="0.6"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Fala 1 -->
+  <path fill="url(#waveGradient1)" d="M0,320 C360,400 1080,240 1440,320 L1440,600 L0,600 Z"/>
+  
+  <!-- Fala 2 -->
+  <path fill="url(#waveGradient2)" d="M0,280 C400,360 1040,200 1440,280 L1440,600 L0,600 Z"/>
+
+  <!-- Fala 3 (jasna) -->
+  <path fill="#eff5e5" d="M0,240 C420,320 1020,160 1440,240 L1440,600 L0,600 Z"/>
+</svg>
