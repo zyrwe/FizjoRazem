@@ -61,10 +61,10 @@ const cases = [
 <template>
   <section
     :id="id"
-    class="relative min-h-screen flex items-center px-6 overflow-hidden"
+    class="relative min-h-[100svh] flex items-center px-6 pt-24 md:pt-28 overflow-hidden"
   >
     <div
-      class="max-w-7xl mx-auto w-full grid lg:grid-cols-2 gap-16 items-center"
+      class="max-w-7xl mx-auto w-full grid lg:grid-cols-2 gap-16 items-center sm:p-20"
     >
       <!-- LEWA STRONA -->
       <div>

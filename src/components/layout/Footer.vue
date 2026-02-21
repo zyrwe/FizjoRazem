@@ -13,6 +13,12 @@ const handleClick = () => {
       <div>
         <h3 class="text-2xl font-bold mb-4">Fizjorazem</h3>
         <p class="opacity-80">Profesjonalna fizjoterapia w Twoim domu.</p>
+        <button
+          @click="handleClick"
+          class="text-light hover:underline pt-4 block"
+        >
+          Polityka prywatności
+        </button>
       </div>
 
       <!-- Kontakt -->
@@ -30,9 +36,6 @@ const handleClick = () => {
         <p>NIP: 0000000000</p>
         <p>REGON: 000000000</p>
       </div>
-      <button @click="handleClick" class="text-light hover:underline">
-        Zobacz politykę prywatności
-      </button>
     </div>
 
     <div class="text-center mt-12 opacity-70 text-sm">
