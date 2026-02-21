@@ -118,7 +118,7 @@ watch(activeTab, () => {
                   ? 'order-1 md:order-1'
                   : 'order-2 md:order-2'
               "
-              class="bg-white rounded-2xl p-10 shadow-xl min-h-[250px] flex items-center"
+              class="hidden md:flex bg-white rounded-2xl p-10 shadow-xl min-h-[250px] flex items-center"
             >
               <transition name="fade" mode="out-in">
                 <p :key="activeIndex" class="text-lg text-ink leading-relaxed">
@@ -140,14 +140,33 @@ watch(activeTab, () => {
                 v-for="(item, index) in currentItems"
                 :key="item.title"
                 @click="activeIndex = index"
-                class="cursor-pointer p-6 rounded-xl transition-all duration-300 border-2"
+                class="cursor-pointer rounded-xl transition-all duration-300 border-2 overflow-hidden"
                 :class="
                   activeIndex === index
-                    ? 'bg-primary text-white border-primary scale-105 shadow-lg'
-                    : 'bg-white border-secondary hover:scale-105'
+                    ? 'bg-primary text-white border-primary shadow-lg'
+                    : 'bg-white border-secondary'
                 "
               >
-                {{ item.title }}
+                <div class="p-6">
+                  {{ item.title }}
+                </div>
+
+                <!-- MOBILE DESCRIPTION -->
+                <div
+                  class="md:hidden transition-all duration-300 overflow-hidden"
+                  :class="
+                    activeIndex === index ? 'max-h-40 p-6 pt-0' : 'max-h-0'
+                  "
+                >
+                  <p
+                    class="text-sm leading-relaxed"
+                    :class="
+                      activeIndex === index ? 'text-white/90' : 'text-ink'
+                    "
+                  >
+                    {{ item.description }}
+                  </p>
+                </div>
               </div>
             </div>
           </div>

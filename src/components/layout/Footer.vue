@@ -1,3 +1,11 @@
+<script setup>
+const emit = defineEmits(["privacyClick"]); // deklarujesz jakie eventy Footer emituje
+
+const handleClick = () => {
+  emit("privacyClick");
+  window.scrollTo({ top: 0, behavior: "smooth" }); // dodaje scroll do góry
+};
+</script>
 <template>
   <footer class="bg-primary text-light py-16 px-6 mt-24">
     <div class="max-w-7xl mx-auto grid md:grid-cols-3 gap-12">
@@ -22,6 +30,9 @@
         <p>NIP: 0000000000</p>
         <p>REGON: 000000000</p>
       </div>
+      <button @click="handleClick" class="text-light hover:underline">
+        Zobacz politykę prywatności
+      </button>
     </div>
 
     <div class="text-center mt-12 opacity-70 text-sm">

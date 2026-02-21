@@ -13,5 +13,4 @@ import Footer from "../components/layout/Footer.vue";
   <Services id="services" />
   <Offer id="offer" />
   <Contact id="contact" />
-  <Footer id="footer" />
 </template>
