@@ -20,6 +20,16 @@ const individual = [
     description:
       "Terapia manualna zmniejszająca napięcia mięśniowe, poprawiająca krążenie i przyspieszająca regenerację.",
   },
+  {
+    title: "Masaż leczniczy",
+    description:
+      "Terapia manualna zmniejszająca napięcia mięśniowe, poprawiająca krążenie i przyspieszająca regenerację.",
+  },
+  {
+    title: "Masaż leczniczy",
+    description:
+      "Terapia manualna zmniejszająca napięcia mięśniowe, poprawiająca krążenie i przyspieszająca regenerację.",
+  },
 ];
 
 const company = [
@@ -32,6 +42,16 @@ const company = [
     title: "Profilaktyka w miejscu pracy",
     description:
       "Działania zapobiegające przeciążeniom i urazom wynikającym z charakteru pracy.",
+  },
+  {
+    title: "Warsztaty ergonomii",
+    description:
+      "Szkolenia z zakresu ergonomii stanowiska pracy i zdrowych nawyków ruchowych.",
+  },
+  {
+    title: "Warsztaty ergonomii",
+    description:
+      "Szkolenia z zakresu ergonomii stanowiska pracy i zdrowych nawyków ruchowych.",
   },
   {
     title: "Warsztaty ergonomii",
@@ -55,15 +75,15 @@ watch(activeTab, () => {
 </script>
 
 <template>
-  <section id="pricing" class="min-h-screen py-40 px-6 relative">
+  <section id="pricing" class="min-h-screen py-25 px-6 relative">
     <div class="max-w-5xl mx-auto text-center">
       <h2 class="text-4xl font-bold mb-12 text-ink">
-        Współpraca
+        Nasza oferta
         <div class="w-24 mt-2 h-1 bg-accent mx-auto rounded-full"></div>
       </h2>
 
       <!-- Toggle -->
-      <div class="relative inline-flex bg-primary/20 p-1 rounded-full mb-5">
+      <div class="relative inline-flex bg-primary/20 p-1 rounded-full">
         <div
           class="absolute top-1 bottom-1 w-1/2 bg-primary rounded-full transition-all duration-300"
           :class="activeTab === 'company' ? 'translate-x-full ' : ''"

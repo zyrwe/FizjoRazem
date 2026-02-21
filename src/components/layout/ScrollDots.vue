@@ -1,6 +1,6 @@
 <template>
   <div
-    class="fixed top-1/2 right-6 transform -translate-y-1/2 flex flex-col gap-3 z-50"
+    class="hidden md:flex fixed top-1/2 right-6 transform -translate-y-1/2 flex flex-col gap-3 z-50"
   >
     <button
       v-for="(section, index) in sections"

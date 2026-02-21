@@ -5,7 +5,7 @@ import { services } from "@/content/servicesData.js";
 
 <template>
   <section id="services" class="py-25 px-6 relative">
-    <h2 class="text-4xl md:text-5xl font-bold text-center mb-16 text-ink">
+    <h2 class="text-4xl md:text-5xl font-bold text-center mb-5 text-ink">
       Nasze metody pracy
       <div class="w-24 mt-2 h-1 bg-accent mx-auto rounded-full"></div>
     </h2>

@@ -9,7 +9,7 @@ defineProps({
 <template>
   <section
     :id="id"
-    class="min-h-screen flex items-center justify-center px-6 py-32 bg-white"
+    class="min-h-screen flex items-center justify-center px-6 bg-white"
   >
     <div class="max-w-5xl w-full">
       <!-- NAGŁÓWEK -->

@@ -50,7 +50,7 @@ onUnmounted(() => {
 </script>
 
 <template>
-  <nav class="sticky top-0 z-50 transition-all duration-300">
+  <nav class="fixed top-0 left-0 w-full z-50 transition-all duration-300">
     <div
       class="max-w-7xl mx-auto flex items-center bg-primary justify-between px-6 py-3 border-2 border-secondary rounded-2xl backdrop-blur-md"
     >
@@ -69,7 +69,7 @@ onUnmounted(() => {
           <a
             :href="link.href"
             @click="closeMenu"
-            class="relative px-3 py-2 text-white font-medium transition-all duration-300 hover:text-accent hover:scale-110 hover:-translate-y-1"
+            class="relative px-3 py-2 text-white transition-all duration-300 hover:text-accent hover:scale-110 hover:-translate-y-1"
             :class="activeIndex === index ? 'text-accent scale-110' : ''"
           >
             {{ link.label }}

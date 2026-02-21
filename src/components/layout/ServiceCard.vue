@@ -30,7 +30,9 @@ defineProps({
       <div
         class="absolute w-full h-full backface-hidden rotate-y-180 bg-primary rounded-xl shadow-lg flex items-center justify-center p-4"
       >
-        <p class="text-white font-Poppins text-center">{{ description }}</p>
+        <p class="text-white text-xl font-Poppins text-center">
+          {{ description }}
+        </p>
       </div>
     </div>
   </div>
