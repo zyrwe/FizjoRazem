@@ -19,7 +19,7 @@ defineProps({
           v-if="image"
           :src="image"
           :alt="title"
-          class="h-128 w-128 mb-2 object-contain rounded-xl"
+          class="max-w-full max-h-full object-contain rounded-xl"
         />
         <h3 class="text-xl font-Poppins font-bold text-primary text-center">
           {{ title }}

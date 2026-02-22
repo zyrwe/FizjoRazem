@@ -1,23 +1,11 @@
 import KINEZYTERAPIA from "@/assets/services/KINEZYTERAPIA.png";
 import PINOTERAPIA from "@/assets/services/PINOTERAPIA.png";
 import KINESIOLOGYTAPING from "@/assets/services/KINESIOLOGYTAPING.png";
-import BANKI from "@/assets/services/KINEZYTERAPIA.png";
-import MASAZ from "@/assets/services/KINEZYTERAPIA.png";
-import BLIZNY from "@/assets/services/KINEZYTERAPIA.png";
+import BANKI from "@/assets/services/BANKI.png";
+import MASAZ from "@/assets/services/MASAZ.png";
+import BLIZNY from "@/assets/services/BLIZNY.png";
 
 export const services = [
-  {
-    title: "KINEZYTERAPIA",
-    description:
-      "Terapeutyczne ćwiczenia ruchowe poprawiające sprawność i przywracające równowagę mięśniowo-stawową.",
-    image: KINEZYTERAPIA,
-  },
-  {
-    title: "PINOTERAPIA",
-    description:
-      "Delikatna stymulacja punktów na ciele, wspomagająca regenerację i redukcję napięć.",
-    image: PINOTERAPIA,
-  },
   {
     title: "KINESIOLOGYTAPING",
     description:
@@ -25,10 +13,16 @@ export const services = [
     image: KINESIOLOGYTAPING,
   },
   {
-    title: "BAŃKI OGNIOWE",
+    title: "TERAPIA BLIZNY",
     description:
-      "Metoda leczenia miejscowego, pobudzająca krążenie i redukująca napięcie mięśniowe.",
-    image: BANKI,
+      "Specjalistyczna pielęgnacja blizn po zabiegach lub urazach, poprawiająca elastyczność i wygląd skóry.",
+    image: BLIZNY,
+  },
+  {
+    title: "KINEZYTERAPIA",
+    description:
+      "Terapeutyczne ćwiczenia ruchowe poprawiające sprawność i przywracające równowagę mięśniowo-stawową.",
+    image: KINEZYTERAPIA,
   },
   {
     title: "MASAŻ",
@@ -37,9 +31,15 @@ export const services = [
     image: MASAZ,
   },
   {
-    title: "TERAPIA BLIZNY",
+    title: "PINOTERAPIA",
     description:
-      "Specjalistyczna pielęgnacja blizn po zabiegach lub urazach, poprawiająca elastyczność i wygląd skóry.",
-    image: BLIZNY,
+      "Delikatna stymulacja punktów na ciele, wspomagająca regenerację i redukcję napięć.",
+    image: PINOTERAPIA,
+  },
+  {
+    title: "BAŃKI OGNIOWE",
+    description:
+      "Metoda leczenia miejscowego, pobudzająca krążenie i redukująca napięcie mięśniowe.",
+    image: BANKI,
   },
 ];
