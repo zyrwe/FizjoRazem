@@ -10,7 +10,7 @@ import { services } from "@/content/servicesData.js";
       <div class="w-24 mt-2 h-1 bg-accent mx-auto rounded-full"></div>
     </h2>
     <div
-      class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-4 justify-items-center max-w-[1200px] mx-auto"
+      class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 lg:grid-cols-4 gap-4 justify-items-center max-w-[1200px] mx-auto"
     >
       <ServiceCard
         v-for="(service, index) in services"

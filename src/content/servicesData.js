@@ -7,39 +7,51 @@ import BLIZNY from "@/assets/services/BLIZNY.png";
 
 export const services = [
   {
-    title: "KINESIOLOGYTAPING",
+    title: "KINESIOLOGY TAPING",
     description:
-      "Specjalistyczne plastry wspierające mięśnie i stawy, poprawiające krążenie i przyspieszające regenerację.",
+      "Kinesiologytaping opiera się na różnych sposobach aplikacji dostosowanych do dysfunkcji narządu ruchu, układu limfatycznego czy też w terapii blizn. Plastrowanie ma szerokie działanie: rozluźniające, stabilizujące, przeciwobrzękowe,przeciwbólowe.",
     image: KINESIOLOGYTAPING,
   },
   {
     title: "TERAPIA BLIZNY",
     description:
-      "Specjalistyczna pielęgnacja blizn po zabiegach lub urazach, poprawiająca elastyczność i wygląd skóry.",
+      "Terapia blizny ma na celu poprawę nie tylko wyglądu ale funkcjonowania tkanek w obrębie i poza obszarem blizny, wykorzystywane są techniki manualne takie jak masaż i mobilizacja blizny, pinoterapia, ale też kinesiologytaping czy zabiegi fizykalne.",
     image: BLIZNY,
   },
   {
     title: "KINEZYTERAPIA",
     description:
-      "Terapeutyczne ćwiczenia ruchowe poprawiające sprawność i przywracające równowagę mięśniowo-stawową.",
+      "Kinezyterapia to inaczej szeroko pojęte leczenie ruchem. Ćwiczenia poprawiają wydolność, zwiększają zakres ruchomości i odżywienie tkanek, wpływają na siłę mięśniową, poprawiają koordynację ruchową.",
     image: KINEZYTERAPIA,
   },
   {
     title: "MASAŻ",
     description:
-      "Różne techniki masażu, rozluźniające mięśnie, redukujące stres i poprawiające samopoczucie.",
+      "Jako pojedynczy zabieg wpływa wyciszająco na układ nerwowy, relaksuje, pomaga pozbyć się napięć wynikających ze stresu. W serii zabiegów wykorzystywany jest w celu zmniejszenia bólu, rozluźnieniu tkanek zwiększając zakres ruchu w stawach, zmniejsza obrzęki i stany zapalne, przygotowuje ciało do dalszych elementów terapii.",
     image: MASAZ,
   },
   {
     title: "PINOTERAPIA",
     description:
-      "Delikatna stymulacja punktów na ciele, wspomagająca regenerację i redukcję napięć.",
+      "Pionoterapia pobudza i umożliwia uruchomienie utraconego przewodnictwa nerwowego; redukcja napięć mięśniowych, zmniejszenie bólu, poprawa elastyczności tkanek, ruchomości stawów. Pinoterapia doskonale sprawdza się w bólach migrenowych, bólach przeciążeniowych, neuropatiach, stwardnieniu rozsianym.",
     image: PINOTERAPIA,
   },
   {
-    title: "BAŃKI OGNIOWE",
+    title: "TERAPIA BAŃKAMI",
     description:
-      "Metoda leczenia miejscowego, pobudzająca krążenie i redukująca napięcie mięśniowe.",
+      "Podczas stawiania baniek dochodzi do wytworzenia podciśnienia wtedy unoszona jest skóra i tkanka podskórna. Wpływ: obniżenie napięcie, działanie przeciwbólowe, przeciwzapalne, poprawa przepływu limfy. Zastosowanie w chorobach dróg oddechowych  oraz regeneracji mięśni także po treningu.",
+    image: BANKI,
+  },
+  {
+    title: "FIZYKOTERAPIA",
+    description:
+      "Podczas stawiania baniek dochodzi do wytworzenia podciśnienia wtedy unoszona jest skóra i tkanka podskórna. Wpływ: obniżenie napięcie, działanie przeciwbólowe, przeciwzapalne, poprawa przepływu limfy. Zastosowanie w chorobach dróg oddechowych  oraz regeneracji mięśni także po treningu.",
+    image: BANKI,
+  },
+  {
+    title: "NAUKA SAMOOBSŁUGI I CHODU",
+    description:
+      "Podczas stawiania baniek dochodzi do wytworzenia podciśnienia wtedy unoszona jest skóra i tkanka podskórna. Wpływ: obniżenie napięcie, działanie przeciwbólowe, przeciwzapalne, poprawa przepływu limfy. Zastosowanie w chorobach dróg oddechowych  oraz regeneracji mięśni także po treningu.",
     image: BANKI,
   },
 ];
