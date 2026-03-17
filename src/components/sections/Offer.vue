@@ -8,27 +8,36 @@ const individual = [
   {
     title: "Rehabilitacja domowa",
     description:
-      "Kompleksowa rehabilitacja w domu pacjenta. Indywidualny plan terapii dostosowany do potrzeb i możliwości ruchowych.",
-  },
-  {
-    title: "Terapia manualna",
-    description:
-      "Specjalistyczne techniki pracy z tkankami miękkimi oraz stawami, redukujące ból i przywracające mobilność.",
+      "Cena 200 zł za wizytę plus opłata za dojazd powyżej 10 km .Możliwe bonusy za wykupienie zabiegów powyżej 7 wizyt (ustalane indywidualnie)",
   },
   {
     title: "Masaż leczniczy",
     description:
-      "Terapia manualna zmniejszająca napięcia mięśniowe, poprawiająca krążenie i przyspieszająca regenerację.",
+      "Kręgosłup cały ( 45 min do 60 min) 150 zł plus dojazd powyżej 10 kmKręgosłup szyjny i obręcz barkowa (45 min) 150 zł plus dojazd powyżej 10 km",
   },
   {
-    title: "Masaż leczniczy",
+    title: "Drenaż limfatyczny",
     description:
-      "Terapia manualna zmniejszająca napięcia mięśniowe, poprawiająca krążenie i przyspieszająca regenerację.",
+      "Kończyny dolne ( do 60 min) 150-200 zł plus dojazd powyżej 10 kmKończyna górna (45 min) 150 zł plus dojazd powyżej 10 km",
   },
   {
-    title: "Masaż leczniczy",
+    title: "Masaż Kobido",
     description:
-      "Terapia manualna zmniejszająca napięcia mięśniowe, poprawiająca krążenie i przyspieszająca regenerację.",
+      "200 zł plus dojazd powyżej 10 kmTransbukalny ( jako uzupełnienie masażu Kobido ) 250 zł plus dojazd powyżej 10 km",
+  },
+  {
+    title: "Kinesiotaping ",
+    description:
+      "40- 70 zł (cena uzależniona od powierzchni obszaru oklejania )plus dojazd powyżej 10 km",
+  },
+  {
+    title: "Bańki ",
+    description: "150 zł plus dojazd powyżej 10 km",
+  },
+  {
+    title: "Pinoterapia",
+    description:
+      "Ceny za fizykoterapię wykonywaną w warunkach domowych ustalane indywidualnie",
   },
 ];
 
@@ -49,14 +58,9 @@ const company = [
       "Szkolenia z zakresu ergonomii stanowiska pracy i zdrowych nawyków ruchowych.",
   },
   {
-    title: "Warsztaty ergonomii",
+    title: "Masaż biurowy",
     description:
-      "Szkolenia z zakresu ergonomii stanowiska pracy i zdrowych nawyków ruchowych.",
-  },
-  {
-    title: "Warsztaty ergonomii",
-    description:
-      "Szkolenia z zakresu ergonomii stanowiska pracy i zdrowych nawyków ruchowych.",
+      "Masaż biurowy to krótka, wygodna forma relaksu wykonywana bezpośrednio w miejscu pracytrwa zwykle 10-20 minutobejmuje głównie:karkplecyramionaczasem ręce i głowęodbywa się w pozycji siedzącej (na specjalnym krześle)Korzyści: redukcja stresu i napięciazmniejszenie bólu pleców i szyipoprawa koncentracji i efektywnościlepsze samopoczucie w pracy",
   },
 ];
 

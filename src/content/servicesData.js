@@ -4,6 +4,8 @@ import KINESIOLOGYTAPING from "@/assets/services/KINESIOLOGYTAPING.png";
 import BANKI from "@/assets/services/BANKI.png";
 import MASAZ from "@/assets/services/MASAZ.png";
 import BLIZNY from "@/assets/services/BLIZNY.png";
+import FIZYKOTERAPIA from "@/assets/services/FIZYKOTERAPIA.png";
+import NAUKA from "@/assets/services/NAUKA.png";
 
 export const services = [
   {
@@ -45,13 +47,20 @@ export const services = [
   {
     title: "FIZYKOTERAPIA",
     description:
-      "Podczas stawiania baniek dochodzi do wytworzenia podciśnienia wtedy unoszona jest skóra i tkanka podskórna. Wpływ: obniżenie napięcie, działanie przeciwbólowe, przeciwzapalne, poprawa przepływu limfy. Zastosowanie w chorobach dróg oddechowych  oraz regeneracji mięśni także po treningu.",
-    image: BANKI,
+      "Laser" +
+      "Ultradźwięki ( również fonoforeza)" +
+      "Elektroterapia: " +
+      "Prądy TENS" +
+      "Prądy interferencyjne" +
+      "Prądy diadynamiczne (Bernarda)" +
+      "Prądy galwaniczne używany np. do jonoforezy (wprowadzanie leków przez skórę)" +
+      "Prądy Kotza (silna stymulacja mięśni stosowane np. u sportowców)",
+    image: FIZYKOTERAPIA,
   },
   {
     title: "NAUKA SAMOOBSŁUGI I CHODU",
     description:
-      "Podczas stawiania baniek dochodzi do wytworzenia podciśnienia wtedy unoszona jest skóra i tkanka podskórna. Wpływ: obniżenie napięcie, działanie przeciwbólowe, przeciwzapalne, poprawa przepływu limfy. Zastosowanie w chorobach dróg oddechowych  oraz regeneracji mięśni także po treningu.",
-    image: BANKI,
+      "Pionizacja i rekonwalescencja po długim unieruchomieniu , zabiegach operacyjnych lub długim pobycie w szpitalu.",
+    image: NAUKA,
   },
 ];
