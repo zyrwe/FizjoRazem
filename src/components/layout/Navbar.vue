@@ -85,20 +85,20 @@ onUnmounted(() => {
       <!-- SOCIAL (desktop only) -->
       <div class="hidden md:flex gap-4 items-center">
         <a
-          href="https://facebook.com"
+          href="https://www.facebook.com/people/Fizjo-Razem/61585240739852/"
           target="_blank"
           class="hover:scale-125 transition-all duration-300"
         >
           <img src="/external/Facebook.png" alt="Facebook" class="h-6" />
         </a>
 
-        <a
+        <!-- <a
           href="https://instagram.com"
           target="_blank"
           class="hover:scale-125 transition-all duration-300"
         >
           <img src="/external/Instagram.png" alt="Instagram" class="h-6" />
-        </a>
+        </a> -->
       </div>
 
       <!-- HAMBURGER BUTTON -->

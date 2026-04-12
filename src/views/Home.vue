@@ -11,6 +11,6 @@ import Footer from "../components/layout/Footer.vue";
   <Hero id="hero" />
   <About id="about" />
   <Services id="services" />
-  <Offer id="offer" />
+  <!-- <Offer id="offer" /> -->
   <Contact id="contact" />
 </template>

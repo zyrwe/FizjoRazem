@@ -25,7 +25,7 @@ defineProps({
 
       <!-- TREŚĆ -->
       <div class="grid md:grid-cols-2 gap-12 items-center">
-        <!-- LEWA STRONA - TEKST -->
+        <!-- LEWA -->
         <div class="space-y-8">
           <div
             v-for="(line, index) in landingContent.about.text"
@@ -39,20 +39,20 @@ defineProps({
               v-html="line"
             ></p>
           </div>
+          <div class="w-full bg-primary text-white p-6 rounded-3xl shadow-xl">
+            <p class="font-Poppins text-xl leading-relaxed">
+              Wierzymy, że skuteczna terapia zaczyna się od relacji.<br />
+              Działamy z empatią, uważnością i profesjonalizmem.
+            </p>
+          </div>
         </div>
 
-        <!-- PRAWA STRONA - BLOK STYLISTYCZNY -->
-        <div
-          class="bg-primary text-white rounded-3xl p-12 shadow-xl relative overflow-hidden"
-        >
-          <p class="font-Poppins text-xl md:text-2xl leading-relaxed">
-            Wierzymy, że skuteczna terapia zaczyna się od relacji. <br />
-            Działamy z empatią, uważnością i profesjonalizmem.
-          </p>
-
-          <div
-            class="absolute -bottom-10 -right-10 w-40 h-40 bg-secondary/20 rounded-full blur-2xl"
-          ></div>
+        <!-- PRAWA -->
+        <div class="relative">
+          <img
+            src="/photos/fizjorazem-pht.jpeg"
+            class="rounded-3xl shadow-xl w-full object-cover"
+          />
         </div>
       </div>
     </div>

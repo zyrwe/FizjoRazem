@@ -48,7 +48,7 @@ const phoneOrMail2 = computed(() =>
         </a>
       </div>
     </div>
-    <div
+    <!-- <div
       class="text-center grid grid-cols-1 md:grid-cols-1 max-w-6xl mx-auto mt-15"
     >
       <h2
@@ -61,10 +61,9 @@ const phoneOrMail2 = computed(() =>
           href="https://www.booksy.com/pl-pl/booking/fizjorazem-1"
           class="relative w-[350px] md:w-[550px] group b-order-2 bg-primary p-8 border-primary rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300"
         >
-          <!-- OBRAZEK -->
           <img :src="Booksy" alt="Booksy" class="w-full h-auto block" />
         </a>
       </div>
-    </div>
+    </div> -->
   </section>
 </template>

@@ -26,15 +26,20 @@ const handleClick = () => {
         <h4 class="font-semibold mb-4">Kontakt</h4>
         <p>+48 455 505 027</p>
         <p>+48 455 408 009</p>
-        <p>kontakt@fizjorazem.pl</p>
+        <p>fizjorazem@gmail.com</p>
       </div>
 
       <!-- Dane firmy -->
       <div>
         <h4 class="font-semibold mb-4">Dane firmy</h4>
-        <p>Fizjorazem Sp. z o.o.</p>
-        <p>NIP: 0000000000</p>
-        <p>REGON: 000000000</p>
+        <p>Fizjo KKC Karolina Kuczkowska-Cwajna</p>
+        <p>NIP: 5832996656</p>
+        <p>REGON: 543387620</p>
+        <br />
+
+        <p>Fizjo MDC Magdalena Domachowska-Ciemny</p>
+        <p>NIP: 5841784830</p>
+        <p>REGON: 221622390</p>
       </div>
     </div>
 

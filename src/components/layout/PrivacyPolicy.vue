@@ -16,7 +16,7 @@ const emit = defineEmits(["closePrivacy"]);
         <p><strong>1. Administrator danych</strong></p>
         <p>
           Administratorem danych osobowych jest FizjoRazem.<br />
-          E-mail: kontakt@fizjorazem.pl
+          E-mail: fizjorazem@gmail.com
         </p>
 
         <p><strong>2. Zakres przetwarzanych danych</strong></p>

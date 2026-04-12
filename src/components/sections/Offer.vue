@@ -8,36 +8,32 @@ const individual = [
   {
     title: "Rehabilitacja domowa",
     description:
-      "Cena 200 zł za wizytę plus opłata za dojazd powyżej 10 km .Możliwe bonusy za wykupienie zabiegów powyżej 7 wizyt (ustalane indywidualnie)",
+      "Cena 200 zł za wizytę plus opłata za dojazd powyżej 10 km. Możliwe bonusy za wykupienie zabiegów powyżej 7 wizyt (ustalane indywidualnie)",
   },
   {
     title: "Masaż leczniczy",
     description:
-      "Kręgosłup cały ( 45 min do 60 min) 150 zł plus dojazd powyżej 10 kmKręgosłup szyjny i obręcz barkowa (45 min) 150 zł plus dojazd powyżej 10 km",
+      "Kręgosłup cały (45–60 min) 150 zł. Kręgosłup szyjny i obręcz barkowa 150 zł. + dojazd",
   },
   {
     title: "Drenaż limfatyczny",
-    description:
-      "Kończyny dolne ( do 60 min) 150-200 zł plus dojazd powyżej 10 kmKończyna górna (45 min) 150 zł plus dojazd powyżej 10 km",
+    description: "Kończyny dolne 150–200 zł. Kończyna górna 150 zł. + dojazd",
   },
   {
     title: "Masaż Kobido",
-    description:
-      "200 zł plus dojazd powyżej 10 kmTransbukalny ( jako uzupełnienie masażu Kobido ) 250 zł plus dojazd powyżej 10 km",
+    description: "200 zł. Transbukalny 250 zł. + dojazd",
   },
   {
-    title: "Kinesiotaping ",
-    description:
-      "40- 70 zł (cena uzależniona od powierzchni obszaru oklejania )plus dojazd powyżej 10 km",
+    title: "Kinesiotaping",
+    description: "40–70 zł. Cena zależna od obszaru.",
   },
   {
-    title: "Bańki ",
-    description: "150 zł plus dojazd powyżej 10 km",
+    title: "Bańki",
+    description: "150 zł + dojazd",
   },
   {
     title: "Pinoterapia",
-    description:
-      "Ceny za fizykoterapię wykonywaną w warunkach domowych ustalane indywidualnie",
+    description: "Cena ustalana indywidualnie",
   },
 ];
 
@@ -45,22 +41,19 @@ const company = [
   {
     title: "Pakiety dla pracowników",
     description:
-      "Stała opieka fizjoterapeutyczna dla zespołów, zmniejszająca absencję i poprawiająca komfort pracy.",
+      "Stała opieka fizjoterapeutyczna dla zespołów. Zmniejszenie absencji. Poprawa komfortu pracy.",
   },
   {
     title: "Profilaktyka w miejscu pracy",
-    description:
-      "Działania zapobiegające przeciążeniom i urazom wynikającym z charakteru pracy.",
+    description: "Zapobieganie przeciążeniom. Lepsza ergonomia. Mniej urazów.",
   },
   {
     title: "Warsztaty ergonomii",
-    description:
-      "Szkolenia z zakresu ergonomii stanowiska pracy i zdrowych nawyków ruchowych.",
+    description: "Szkolenia ergonomiczne. Zdrowe nawyki ruchowe.",
   },
   {
     title: "Masaż biurowy",
-    description:
-      "Masaż biurowy to krótka, wygodna forma relaksu wykonywana bezpośrednio w miejscu pracytrwa zwykle 10-20 minutobejmuje głównie:karkplecyramionaczasem ręce i głowęodbywa się w pozycji siedzącej (na specjalnym krześle)Korzyści: redukcja stresu i napięciazmniejszenie bólu pleców i szyipoprawa koncentracji i efektywnościlepsze samopoczucie w pracy",
+    description: "10–20 minut. Kark, plecy, ramiona. Redukcja stresu i bólu.",
   },
 ];
 
@@ -72,102 +65,113 @@ const currentDescription = computed(
   () => currentItems.value[activeIndex.value].description,
 );
 
-// reset aktywnej pozycji przy zmianie zakładki
 watch(activeTab, () => {
   activeIndex.value = 0;
 });
 </script>
 
 <template>
-  <section id="pricing" class="min-h-screen py-25 px-6 relative">
-    <div class="max-w-5xl mx-auto text-center">
+  <section id="pricing" class="min-h-screen py-25 px-6">
+    <div class="max-w-6xl mx-auto text-center">
       <h2 class="text-4xl font-bold mb-12 text-ink">
         Nasza oferta
         <div class="w-24 mt-2 h-1 bg-accent mx-auto rounded-full"></div>
       </h2>
 
-      <!-- Toggle -->
+      <!-- TOGGLE -->
       <div class="relative inline-flex bg-primary/20 p-1 rounded-full">
         <div
           class="absolute top-1 bottom-1 w-1/2 bg-primary rounded-full transition-all duration-300"
-          :class="activeTab === 'company' ? 'translate-x-full ' : ''"
+          :class="activeTab === 'company' ? 'translate-x-full' : ''"
         ></div>
 
         <button
           @click="activeTab = 'individual'"
-          class="relative z-10 px-8 py-3 rounded-full font-medium transition-all duration-300 cursor-pointer"
-          :class="activeTab === 'individual' ? 'text-light' : 'text-primary'"
+          class="relative z-10 px-8 py-3 rounded-full"
+          :class="activeTab === 'individual' ? 'text-white' : 'text-primary'"
         >
           Indywidualnie
         </button>
 
         <button
           @click="activeTab = 'company'"
-          class="relative z-10 px-8 py-3 rounded-full font-medium transition-all duration-300 cursor-pointer"
-          :class="activeTab === 'company' ? 'text-light' : 'text-primary '"
+          class="relative z-10 px-8 py-3 rounded-full"
+          :class="activeTab === 'company' ? 'text-white' : 'text-primary'"
         >
           Dla firm
         </button>
       </div>
-      <div class="relative mt-10">
+
+      <!-- CONTENT -->
+      <div class="mt-10">
         <transition name="fade" mode="out-in">
           <div
             :key="activeTab"
-            class="grid md:grid-cols-2 gap-10 items-center border-2 border-secondary rounded-2xl p-10"
+            class="grid md:grid-cols-2 gap-10 border-2 border-secondary rounded-2xl p-6 md:p-10 min-h-[500px]"
           >
-            <!-- OPIS (dla firm odwrócony) -->
+            <!-- OPIS FULL HEIGHT -->
             <div
-              :class="
-                activeTab === 'company'
-                  ? 'order-1 md:order-1'
-                  : 'order-2 md:order-2'
-              "
-              class="hidden md:flex bg-white rounded-2xl p-10 shadow-xl min-h-[250px] flex items-center"
+              :class="activeTab === 'company' ? 'order-1' : 'order-2'"
+              class="hidden md:flex h-full"
             >
               <transition name="fade" mode="out-in">
-                <p :key="activeIndex" class="text-lg text-ink leading-relaxed">
-                  {{ currentDescription }}
-                </p>
+                <div
+                  :key="activeIndex"
+                  class="w-full h-full bg-white rounded-3xl p-8 shadow-xl border border-secondary/50 flex flex-col justify-between"
+                >
+                  <!-- TOP -->
+                  <div>
+                    <h3 class="text-2xl font-bold text-primary mb-4">
+                      {{ currentItems[activeIndex].title }}
+                    </h3>
+
+                    <div class="w-16 h-1 bg-accent mb-6 rounded-full"></div>
+
+                    <div class="space-y-3 text-ink leading-relaxed">
+                      <p
+                        v-for="(line, i) in currentDescription.split('.')"
+                        :key="i"
+                        class="flex gap-3"
+                      >
+                        <span
+                          class="mt-2 w-2 h-2 bg-accent rounded-full"
+                        ></span>
+                        <span>{{ line.trim() }}</span>
+                      </p>
+                    </div>
+                  </div>
+                </div>
               </transition>
             </div>
 
             <!-- LISTA -->
             <div
-              :class="
-                activeTab === 'company'
-                  ? 'order-2 md:order-2'
-                  : 'order-1 md:order-1'
-              "
+              :class="activeTab === 'company' ? 'order-2' : 'order-1'"
               class="flex flex-col gap-4"
             >
               <div
                 v-for="(item, index) in currentItems"
                 :key="item.title"
                 @click="activeIndex = index"
-                class="cursor-pointer rounded-xl transition-all duration-300 border-2 overflow-hidden"
+                class="cursor-pointer rounded-xl transition-all duration-300 border-2"
                 :class="
                   activeIndex === index
-                    ? 'bg-primary text-white border-primary shadow-lg'
-                    : 'bg-white border-secondary'
+                    ? 'bg-primary text-white border-primary shadow-lg scale-[1.02]'
+                    : 'bg-white border-secondary hover:shadow-md hover:-translate-y-1'
                 "
               >
-                <div class="p-6">
+                <div class="p-6 font-medium">
                   {{ item.title }}
                 </div>
 
-                <!-- MOBILE DESCRIPTION -->
+                <!-- MOBILE -->
                 <div
                   class="md:hidden transition-all duration-300 overflow-hidden"
                   :class="
-                    activeIndex === index ? 'max-h-40 p-6 pt-0' : 'max-h-0'
+                    activeIndex === index ? 'max-h-60 p-6 pt-0' : 'max-h-0'
                   "
                 >
-                  <p
-                    class="text-sm leading-relaxed"
-                    :class="
-                      activeIndex === index ? 'text-white/90' : 'text-ink'
-                    "
-                  >
+                  <p class="text-sm leading-relaxed whitespace-pre-line">
                     {{ item.description }}
                   </p>
                 </div>
@@ -176,18 +180,23 @@ watch(activeTab, () => {
           </div>
         </transition>
       </div>
-      <!-- Content -->
     </div>
   </section>
 </template>
 
 <style>
-.fade-enter-active,
-.fade-leave-active {
-  transition: opacity 0.3s ease;
+.fade-enter-active {
+  transition: all 0.3s ease;
 }
-.fade-enter-from,
+.fade-leave-active {
+  transition: all 0.2s ease;
+}
+.fade-enter-from {
+  opacity: 0;
+  transform: translateY(10px);
+}
 .fade-leave-to {
   opacity: 0;
+  transform: translateY(-10px);
 }
 </style>

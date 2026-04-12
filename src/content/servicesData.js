@@ -46,15 +46,15 @@ export const services = [
   },
   {
     title: "FIZYKOTERAPIA",
-    description:
-      "Laser" +
-      "Ultradźwięki ( również fonoforeza)" +
-      "Elektroterapia: " +
-      "Prądy TENS" +
-      "Prądy interferencyjne" +
-      "Prądy diadynamiczne (Bernarda)" +
-      "Prądy galwaniczne używany np. do jonoforezy (wprowadzanie leków przez skórę)" +
-      "Prądy Kotza (silna stymulacja mięśni stosowane np. u sportowców)",
+    description: `
+Laser
+Ultradźwięki (również fonoforeza)
+Elektroterapia:
+- Prądy TENS
+- Prądy interferencyjne
+- Prądy diadynamiczne (Bernarda)
+- Prądy galwaniczne używany np. do jonoforezy (wprowadzanie leków przez skórę)
+- Prądy Kotza (silna stymulacja mięśni stosowane np. u sportowców)`,
     image: FIZYKOTERAPIA,
   },
   {
